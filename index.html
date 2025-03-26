@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- 
+    游戏元素检查清单:
+    - word-image: 用于显示图片提示
+    - word-display: 用于显示单词占位符
+    - letter-buttons: 用于显示字母按钮
+    - score-value: 用于显示分数
+    - 确保引用了正确的JavaScript文件: js/main.js
+-->
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>看图猜单词游戏</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="game-container">
+        <h2>看图猜单词</h2>
+        <div class="score-container">
+            分数: <span id="score-value">0</span>
+        </div>
+        <div class="image-container">
+            <img id="word-image" src="" alt="猜猜这是什么">
+        </div>
+        <div id="word-display" class="word-display"></div>
+        <div id="letter-buttons" class="letter-buttons"></div>
+        <div class="game-controls">
+            <button id="new-game-btn" class="control-btn">新游戏</button>
+            <button id="next-word-btn" class="control-btn">下一个</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
